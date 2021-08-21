@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac book</title>
+
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+</head>
+<body>
+    
+
+    <section>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 text-center p-0">
+                <img class="img-fluid" src="mac.png" alt="" width="400" height="400">
+            </div>
+            <div class="col-6">
+                <h1>Customize your blue 24-inch</h1>
+                <h1>iMac with Apple M1 chip</h1>
+                <p>Apple MacBook Pro 13.3-Inch Core i5-2.0GHz , 16GB RAM, 512GB SSD With Touch Bar (MWP42) Space Gray 2020</p>
+
+<!-- memory button -->
+
+                <label for="memory-price">Memory</label>
+              <div class="memory-price">
+
+                <button onclick="input('8gb')" id="8gb" type="button" class="btn btn-outline-secondary">8GB unlimited memory</button>
+                <button onclick="input('16gb')" id="16gb" type="button" class="btn btn-outline-secondary">16Gb unlimited memory</button>
+
+              </div>
+<!-- storage button -->
+
+              <label for="storage-price">Storage</label>
+              <div class="storage-price">
+
+                <button onclick="storagePrice('256gb')" id="256gb" type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+
+                <button onclick="storagePrice('512gb')" id="512gb" type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+
+                <button onclick="storagePrice('1tb')" id="1tb" type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+
+              </div>
+<!-- delivery button -->
+
+              <label for="delivery-price">choose your delivery option</label>
+              <div class="delivery-price">
+
+                <button onclick="deliveryCost('free')" id="free-delivery" type="button" class="btn btn-outline-secondary">Friday 21,Aug Free prime delivery</button>
+                <button onclick="deliveryCost('paid')" id="paid-delivery" type="button" class="btn btn-outline-secondary">Friday 25,Aug Free prime delivery</button>
+
+              </div>
+
+
+              <!-- price blocks -->
+
+              <section class="price-block mt-5">
+                <div class="row">
+                    <div class="col">
+                        <h4>Best price</h4>
+                        <h4>Extra memory cost</h4>
+                        <h4>Extra storage cost</h4>
+                        <h4>Delivery Charge</h4>
+                      
+                       
+                     </div>
+                     <div class="col">
+                        <h4>$<span  id="best-price">1299</span></h4>
+                        <h4>$<span  id="memory-cost">0</span></h4>
+                        <h4 >$<span id="storage-cost">0</span></h4>
+                        <h4>$<span  id="delivery-cost">0</span></h4>
+                     </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <h4 id="clickTotal">Total</h4>
+                    </div>
+                    <div class="col">
+                        <h4>$<span  id="total-price">0</span></h4>
+                    </div>
+                </div>
+                <hr>
+                <p class="" id="wrong-cupon">Give your cupon code </p>
+
+                <input id="cuponValue" type="text">
+
+                <button onclick="cupon()" id="submit" type="button" class="btn btn-danger">Apply</button>
+              </section>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="text-center mb-5">
+
+        <h2 class="d-inline">Total :</h2>
+        <h1 class="d-inline ms-2">$ <span id="allTotal">0</span></h1>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
